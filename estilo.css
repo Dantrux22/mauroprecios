@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre los cuadros */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
+    justify-content: center; /* Centra los formularios */
+}
+
+form {
+    background-color: #f0f4f8;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(44, 62, 80, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+#result, #mauro-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result h2, #mauro-result h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#result p, #mauro-result p {
+    font-size: 1.2em;
+    color: #e74c3c;
+    margin: 0;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Hace que los formularios se apilen verticalmente */
+        align-items: center; /* Centra los formularios en la pantalla */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+    }
+
+    form {
+        width: 100%; /* Hace que los formularios ocupen el ancho completo del contenedor */
+        padding: 20px;
+        margin: 0; /* Elimina márgenes para que ocupen todo el ancho */
+        border-radius: 0; /* Elimina el borde redondeado para un mejor ajuste en móviles */
+        box-shadow: none; /* Elimina la sombra para un diseño más plano en móviles */
+    }
+}

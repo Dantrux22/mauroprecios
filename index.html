@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Buscar Precio</title>
+</head>
+<body>
+    <div class="container">
+        <form id="search-form" autocomplete="off">
+            <label for="articulo">Artículo Vanlon:</label>
+            <input type="text" id="articulo" name="articulo" required autocomplete="off">
+            <button type="submit">Buscar Precio</button>
+            <div id="result">
+                <h2>Precio:</h2>
+                <p id="precio"></p>
+            </div>
+        </form>
+
+        <form id="mauro-form" autocomplete="off">
+            <label for="mauro-articulo">Artículos Mauro:</label>
+            <input type="text" id="mauro-articulo" name="mauro-articulo" required autocomplete="off">
+            <button type="submit">Buscar Precio</button>
+            <div id="mauro-result">
+                <h2>Precio:</h2>
+                <p id="mauro-precio"></p>
+            </div>
+        </form>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
